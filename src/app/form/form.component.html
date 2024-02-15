@@ -1,0 +1,38 @@
+
+<br>
+<br>
+<br>
+<div class="container">
+<form [formGroup]="form">
+<div class="row">
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">name</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control" formControlName="name">
+      
+      </div>
+      <div *ngIf="name!.touched && name!.invalid" class="alert alert-danger">
+ name invalid
+      </div>
+    </div>
+    
+
+      <br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Address</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control" formControlName="address">
+        <div *ngIf="address!.touched && address!.invalid && address?.errors?.['minlength']" class="alert alert-danger">
+            address invalid
+                 </div>
+      </div>
+
+      <input type="submit" name="save" (click)="add()">
+
+</form>
+</div>
+<br>
+<br>
+<br>
