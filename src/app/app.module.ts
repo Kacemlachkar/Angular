@@ -15,7 +15,9 @@ import { ListannonceComponent } from './annonce/listannonce/listannonce.componen
 import { AnnonceModule } from './annonce/annonce.module';
 import { AnnonceRoutingModule } from './annonce/annonce-routing.module';
 import { FormComponent } from './form/form.component';
-
+import{HttpClientModule} from '@angular/common/http';
+import { AppartmentComponent } from './appartment/appartment.component';
+import { AddappartmentComponent } from './addappartment/addappartment.component'
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { FormComponent } from './form/form.component';
     HomeComponent,
     NotfoundComponent,
     FormComponent,
+    AppartmentComponent,
+    AddappartmentComponent,
     
   ],
   imports: [
@@ -34,7 +38,8 @@ import { FormComponent } from './form/form.component';
     FormsModule,
     AppRoutingModule,
     AnnonceModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

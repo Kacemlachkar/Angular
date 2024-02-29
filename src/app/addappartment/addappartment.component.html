@@ -1,0 +1,29 @@
+<form [formGroup]="addform">
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">numappart</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control" formControlName="appartNum">
+       
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">description</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control" formControlName="description">
+        
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">residence</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control" formControlName="residence">
+      </div>
+
+
+<br>
+<button class="btn btn-primary" (click)="add()">add</button>
+</form>
