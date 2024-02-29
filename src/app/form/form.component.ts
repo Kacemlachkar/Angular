@@ -9,6 +9,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class FormComponent implements OnInit {
 
   form!:FormGroup
+
+  constructor(){}
   ngOnInit(): void {
     this.form=new FormGroup({
       name:new FormControl('',Validators.required),
@@ -16,6 +18,7 @@ export class FormComponent implements OnInit {
     })
     
   }
+
 
 get name(){ return this.form.get("name")}
 get address(){ return this.form.get("address")}
