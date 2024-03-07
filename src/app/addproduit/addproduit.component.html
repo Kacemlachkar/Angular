@@ -1,0 +1,20 @@
+<form [formGroup]="addform" style="max-width: 400px; margin: auto;">
+  <div style="margin-bottom: 10px;">
+      <label style="display: block; text-transform: uppercase; font-weight: bold;">Titre</label>
+      <input type="text" class="form-control" formControlName="titre">
+  </div>
+  <div style="margin-bottom: 10px;">
+      <label style="display: block; text-transform: uppercase; font-weight: bold;">Prix</label>
+      <input type="text" class="form-control" formControlName="prix">
+  </div>
+  <div style="margin-bottom: 10px;">
+      <label style="display: block; text-transform: uppercase; font-weight: bold;">Quantite</label>
+      <input type="text" class="form-control" formControlName="quantite">
+  </div>
+  <div style="margin-bottom: 10px;">
+      <label style="display: block; text-transform: uppercase; font-weight: bold;">Aime</label>
+      <input type="text" class="form-control" formControlName="aime">
+  </div>
+  <br>
+  <button class="btn btn-primary" style="background-color: rgb(176, 131, 17); border-color: rgb(7, 135, 79); width: 100%;" (click)="add()">Ajouter</button>
+</form>

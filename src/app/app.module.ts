@@ -17,7 +17,10 @@ import { AnnonceRoutingModule } from './annonce/annonce-routing.module';
 import { FormComponent } from './form/form.component';
 import{HttpClientModule} from '@angular/common/http';
 import { AppartmentComponent } from './appartment/appartment.component';
-import { AddappartmentComponent } from './addappartment/addappartment.component'
+import { AddappartmentComponent } from './addappartment/addappartment.component';
+import { ProduitComponent } from './produit/produit.component';
+import { AddproduitComponent } from './addproduit/addproduit.component';
+import { ShowproduitComponent } from './showproduit/showproduit.component';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import { AddappartmentComponent } from './addappartment/addappartment.component'
     FormComponent,
     AppartmentComponent,
     AddappartmentComponent,
+    ProduitComponent,
+    AddproduitComponent,
+    ShowproduitComponent,
     
   ],
   imports: [
@@ -39,7 +45,7 @@ import { AddappartmentComponent } from './addappartment/addappartment.component'
     AppRoutingModule,
     AnnonceModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,RouterModule
     
   ],
   providers: [],
