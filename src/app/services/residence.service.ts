@@ -21,13 +21,16 @@ appartUrl="http://localhost:3000/appartement"
     }
     return n
    }
-
+// get appart
 getappart():Observable<Apartment[]>{
   return this.http.get<Apartment[]>(this.appartUrl)
 }
+// delete appart
+
 deleteappart(id:number):Observable<Apartment[]>{
   return this.http.delete<Apartment[]>(this.appartUrl+'/'+id)
 }
+// add appart
 
 addappart(appart:Apartment):Observable<Apartment[]>{
   return this.http.post<Apartment[]>(this.appartUrl,appart)
